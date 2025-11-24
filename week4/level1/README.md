@@ -18,6 +18,7 @@
 
 **Submit:**
 
+
 - `week4/level1/embeddings_basic.py` (or notebook) containing your customised code.
 - `week4/level1/nearest_neighbours.txt` with:
   - The source sentences.

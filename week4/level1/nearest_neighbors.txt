@@ -1,0 +1,68 @@
+- `week4/level1/nearest_neighbours.txt` with:
+  - The source sentences.
+  - Top-3 neighbours + cosine similarity per sentence.
+  - A short note identifying the two contrasting cases above.
+
+
+Loading model: sentence-transformers/paraphrase-MiniLM-L6-v2
+Encoded 10 sentences in 0.03s
+
+Sentence [0]: Deep learning models tune millions of weights to improve prediction accuracy.
+  #1  cosine=0.499  →  [5] The future of AI is in Deep Learning, with its wide use cases.
+  #2  cosine=0.412  →  [1] Deep diving requires huge amounts of training and lung capacity.
+  #3  cosine=0.266  →  [7] The sport dart requires focus and accuracy.
+
+Sentence [1]: Deep diving requires huge amounts of training and lung capacity.
+  #1  cosine=0.412  →  [0] Deep learning models tune millions of weights to improve prediction accuracy.
+  #2  cosine=0.380  →  [5] The future of AI is in Deep Learning, with its wide use cases.
+  #3  cosine=0.341  →  [6] Being great requires dedication and hard work.
+
+Sentence [2]: Baking an apple pie from scratch needs fresh ingredients and careful timing.
+  #1  cosine=0.287  →  [8] A new startup is developing AI-powered tools for creative professionals.
+  #2  cosine=0.214  →  [4] The new rspi5 computer board has improved CPU and I/O capabilities.
+  #3  cosine=0.183  →  [3] Raspberry Pi computers are popular for DIY electronics projects.
+
+Sentence [3]: Raspberry Pi computers are popular for DIY electronics projects.
+  #1  cosine=0.334  →  [8] A new startup is developing AI-powered tools for creative professionals.
+  #2  cosine=0.292  →  [4] The new rspi5 computer board has improved CPU and I/O capabilities.
+  #3  cosine=0.258  →  [5] The future of AI is in Deep Learning, with its wide use cases.
+
+Sentence [4]: The new rspi5 computer board has improved CPU and I/O capabilities.
+  #1  cosine=0.412  →  [9] Apple's latest iPhone features an advanced camera system and OLED display.
+  #2  cosine=0.292  →  [3] Raspberry Pi computers are popular for DIY electronics projects.
+  #3  cosine=0.256  →  [8] A new startup is developing AI-powered tools for creative professionals.
+
+Sentence [5]: The future of AI is in Deep Learning, with its wide use cases.
+  #1  cosine=0.499  →  [0] Deep learning models tune millions of weights to improve prediction accuracy.
+  #2  cosine=0.380  →  [1] Deep diving requires huge amounts of training and lung capacity.
+  #3  cosine=0.377  →  [8] A new startup is developing AI-powered tools for creative professionals.
+
+Sentence [6]: Being great requires dedication and hard work.
+  #1  cosine=0.341  →  [1] Deep diving requires huge amounts of training and lung capacity.
+  #2  cosine=0.194  →  [7] The sport dart requires focus and accuracy.
+  #3  cosine=0.113  →  [8] A new startup is developing AI-powered tools for creative professionals.
+
+Sentence [7]: The sport dart requires focus and accuracy.
+  #1  cosine=0.312  →  [1] Deep diving requires huge amounts of training and lung capacity.
+  #2  cosine=0.266  →  [0] Deep learning models tune millions of weights to improve prediction accuracy.
+  #3  cosine=0.230  →  [5] The future of AI is in Deep Learning, with its wide use cases.
+
+Sentence [8]: A new startup is developing AI-powered tools for creative professionals.
+  #1  cosine=0.377  →  [5] The future of AI is in Deep Learning, with its wide use cases.
+  #2  cosine=0.334  →  [3] Raspberry Pi computers are popular for DIY electronics projects.
+  #3  cosine=0.287  →  [2] Baking an apple pie from scratch needs fresh ingredients and careful timing.
+
+Sentence [9]: Apple's latest iPhone features an advanced camera system and OLED display.
+  #1  cosine=0.412  →  [4] The new rspi5 computer board has improved CPU and I/O capabilities.
+  #2  cosine=0.229  →  [5] The future of AI is in Deep Learning, with its wide use cases.
+  #3  cosine=0.179  →  [8] A new startup is developing AI-powered tools for creative professionals.
+
+
+
+Lexically different but semantically close.
+  "Deep learning models tune millions of weights to improve prediction accuracy."
+  "The future of AI is in Deep Learning, with its wide use cases."
+
+Lexically similar but semantically far apart.
+  "Baking an apple pie from scratch needs fresh ingredients and careful timing."
+  "Apple's latest iPhone features an advanced camera system and OLED display."
